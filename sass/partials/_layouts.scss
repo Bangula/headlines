@@ -1,0 +1,138 @@
+header {
+    background: $newsColor;
+    position: fixed;
+    height: 80px;
+    transition: all 0,3s;
+    z-index: +1000;
+    width: 100%;
+    transition: all 0.4s;    
+    .logo {
+        position: absolute;
+        left: 30px;
+        @include centerVer;
+        a {
+            font-size: 24px;
+            border: 2px solid $navLink;
+            display: block;
+            padding: 4px 7px;
+            color: $navLink;
+            z-index: +5;
+        }        
+    }
+    nav {
+        left: 0;
+        right: 0;
+        text-align: center;
+        position: absolute;        
+        @include centerVer;
+        a {
+            @include navSetup;            
+            border: 1px solid transparent;
+        }        
+    }
+    .topSearch {
+        position: absolute;
+        right: 20px;
+        opacity: 0.8;
+        @include centerVer;
+        small {
+            color: $navLink;
+        }
+        input {
+            @include inputStyle;
+        }
+        button {
+            border: 0;
+            border-radius: 10px;
+            padding: 5px 6px;
+            background: $navLink;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+.respons-header {
+    background: $newsColor;
+    position: fixed;
+    height: 50px;
+    z-index: +1000;
+    width: 100%;
+    .res-logo {
+        font-size: 16px;
+        border: 2px solid $navLink;
+        padding: 4px 7px;
+        color: $navLink;
+        line-height: 50px;
+        margin-left: 8px;
+    }
+    img {
+        position: absolute;
+        @include centerVer;
+        right: 8px;
+        width: 30px;
+        cursor: pointer;
+    }
+}
+#mobile-menu {
+    position: fixed;
+    top: -200px;
+    transition: all 0.6s;
+    width: 100%;
+    z-index: 900;
+    a {
+        display: block;
+        width: 100%;
+        color: $navLink;
+        background: $newsColor;
+        border-bottom: 1px solid white;
+        padding: 8px 0;
+        text-align: center;
+    }
+    a:first-child {
+        border-top: 1px solid white;
+    }
+}
+footer {
+    background: $newsColor;
+    height: 250px;
+    width: 100%;
+    padding: 30px 0;
+    @include phone {
+        height: 100px;
+        padding: 10px 0;
+    }
+    .footer-content {
+        @include container;
+        text-align: center;
+        height: 100%;
+        position: relative;
+        nav {
+            @include phone {
+                display: none;
+            }
+            a {
+                @include navSetup;
+            }
+        }
+        .social {
+            margin-top: 50px;
+            @include phone {
+                margin-top: 0;
+            }           
+            img{
+                width: 40px;
+                margin-left: 15px;
+                @include phone {
+                    width: 30px;
+                }
+            }
+        }
+        small {
+            position: absolute;
+            color: $navLink;
+            padding: 0;
+            @include centerHor;
+            bottom: 0;
+        }
+    }
+}

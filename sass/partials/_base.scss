@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;   
+    
+}
+a {
+    text-decoration: none;
+}
+
+//show and hide mobile menu
+.respons-header {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+@media (max-width: 1024px) {
+    header {
+        display: none;      
+    }  
+    .respons-header {
+        display: block;
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+

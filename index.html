@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Headlines - Home page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+        
+</head>
+<body>
+    <div id="arrowUp">
+        <img id="arrow" src="images/up-arrow.png" alt="up arrow">
+    </div>
+    <div id="loader">
+    </div>
+    <div class="respons-header">
+        <a class="res-logo" href="index.html">Headlines</a>
+        <img id="menu-icon" src="images/menu.png" alt="menu icon">
+    </div>
+    <div id="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="weather.html">Weather</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html">Headlines</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="weather.html">Weather</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="topSearch">
+            <small>Search by topic:</small>
+            <input id="topInput" class="searchInput" type="text" placeholder="e.g. sport,weather,games">
+            <button id="topButton">Search</button>            
+        </div>
+    </header>
+    <div id="header-main">        
+        <h1>Worldwide News Headlines</h1>
+        <div id="head-links">
+            <a href="index.html#about-main">News</a>
+            <a href="weather.html">Weather</a>
+        </div>
+    </div>
+    <div id="about-main">
+        
+        <div id="temp"></div>
+        <h1 id="about-head">Hot Headlines</h1>
+        <h3><em>Get the latest news headlines from around the world.</em></h3>
+        <h3><em>We are using 'News API' service to get breaking news headlines, and search for articles from over 30,000 news sources and blogs.</em></h3>
+        <h4>Select Category in Latest News, or enter keyword for your favorite topic.</h4>  
+        <input id="botInput" class="searchInput" type="text" placeholder="e.g. bitcoin, games, nature">
+        <br/>
+        <button id="botButton">Search</button>
+        
+        <div class="about-main-content">
+            <div class="main-section">
+                <div class="wrap"></div>
+                <h1><em>Politics</em></h1>
+                <button id="politics" class="categoryBtn">Read more...</button>
+                <img src="images/categories/rsz_politic.jpg" alt="img">
+            </div>
+            <div class="main-section">
+                <div class="wrap"></div>
+                <h1><em>Sport</em></h1>
+                <button id="sport" class="categoryBtn">Read more...</button>
+                <img src="images/categories/rsz_sport.jpg" alt="img">    
+            </div>
+            <div class="main-section">
+                <div class="wrap"></div>
+                <h1><em>Art</em></h1>
+                <button id="art" class="categoryBtn">Read more...</button>
+                <img src="images/categories/rsz_art.jpg" alt="img">    
+            </div>
+            <div class="main-section">
+                <div class="wrap"></div>
+                <h1><em>Fashion</em></h1>
+                <button id="fashion" class="categoryBtn">Read more...</button>
+                <img src="images/categories/rsz_fashion.jpg" alt="img">    
+            </div>
+        </div>
+    </div>
+
+    <div id="result">
+        <h2 id="resultHeader">Search results for <span id="resultSpan">Bitcoin</span></h2>         
+    </div>
+
+    <div id="news-header"></div>   
+
+    <footer>
+        <div class="footer-content">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="weather.html">Weather</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/banebangula"><img src="images/icons/fb.png" alt="fb icon"></a>
+                <a href="https://linkedin.com/in/branko-vuković-92a703169"><img src="images/icons/square-linkedin-512.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/banebangula"><img src="images/icons/insta.png" alt="instagram icon"></a>
+            </div>
+            <small>&copy; Copyright 2018, Vuković Branko</small>
+        </div>
+    </footer>
+
+    <script src="javascript/mobile-nav.js" ></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

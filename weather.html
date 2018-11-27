@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Headlines - Weather Forecast page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css">
+        
+</head>
+<body>
+    <div class="respons-header weatherHeader">
+        <a class="res-logo" href="index.html">Headlines</a>
+        <img id="menu-icon" src="images/menu.png" alt="menu icon">
+    </div>
+    <div id="mobile-menu">
+        <a class="weatherHeader" href="index.html">Home</a>
+        <a class="weatherHeader" href="weather.html">Weather</a>
+        <a class="weatherHeader" href="about.html">About</a>
+        <a class="weatherHeader" href="contact.html">Contact</a>
+    </div>
+    <header class="weatherHeader">
+        <div class="logo">
+            <a href="index.html">Headlines</a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="weather.html">Weather</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>        
+    </header>
+    <div id="header-big">
+        <div id="weatherSearch">
+            <img id="cloud" src="images/cloud.gif" alt="rain cloud">
+            <h1>Weather Forecast</h1>
+            <input id="inputSearch" type="text" placeholder="City name">
+            <button id="btnSearch">Search</button>
+        </div>
+        
+        
+    </div>
+    <div id="weather-info">
+        <div id="cities">
+            <p id="London">London</p>
+            <p id="Paris">Paris</p>
+            <p id="Madrid">Madrid</p>
+            <p id="Rome">Rome</p>
+            <p id="Belgrade">Belgrade</p>
+        </div>
+        <h2 id="allowLocation">Get weather forecast result for Your location or search for city.</h2>
+    </div>
+    <div id="weather">
+        <div id="weatherContent1">
+            <div id="todayTemp">
+                <div id="temp-left">
+                    <h1 id="cityName"></h1>
+                    <p id="tempDate"></p>
+                    <img id="icon" alt="">
+                    <p id="sky"></p>
+                    <h1 id="celsius"></h1>
+                </div>
+                <div id="temp-right">
+                    <p id="humidity"></p>
+                    <p id="pressure"></p>
+                    <p id="temp_min"></p>
+                    <p id="temp_max"></p>
+                </div>
+                
+            </div>            
+            <div id="map"></div>
+        </div>
+        <div id="weatherContent2">
+        </div>
+    </div>
+
+    <footer class="weatherFooter">
+        <div class="footer-content">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="weather.html">Weather</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/banebangula"><img src="images/icons/fb.png" alt="fb icon"></a>
+                <a href="https://linkedin.com/in/branko-vuković-92a703169"><img src="images/icons/square-linkedin-512.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/banebangula"><img src="images/icons/insta.png" alt="instagram icon"></a>
+            </div>
+            <small>&copy; Copyright 2018, Vuković Branko</small>
+        </div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaMfxx125qpDcCXkY96DgEHsZTVPVKnY8"
+    async defer></script>
+
+    <script src="javascript/mobile-nav.js" ></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/weather.js"></script>
+</body>
+</html>

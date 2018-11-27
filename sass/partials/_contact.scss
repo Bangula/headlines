@@ -1,0 +1,133 @@
+#contact-header {
+    background: url(../images/bg/contact-background-tablet-v1.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: relative;
+    padding: 150px 0; 
+    @include phone {
+        background-position-y: 50px;   
+        padding: 70px 0;     
+    }
+    @include phone-landscape {
+        background-position-y: 50px;   
+        padding: 80px 0;     
+    }
+    h1 {
+        @include pageHeader;
+        @include centerVer;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        padding: 100px 0;
+        @include phone {
+            font-size: 22px;
+        }
+        @include phone-landscape {
+            font-size: 22px;
+            padding: 50px 0;
+        }
+    }
+}
+#contact {
+    @include container;
+    padding: 120px 10px 50px; 
+    @include phone {
+        padding-top: 0px;
+    } 
+    @include phone-landscape {
+        padding-top: 20px;
+    }      
+    h2 {
+        @include pageHeader;
+        letter-spacing: 1px;
+        padding: 80px 0;
+    }
+    h3 {
+        color: rgba(0,0,0,0.8)
+    }
+    #info {
+        margin-top: 50px;
+        display: grid;
+        width: 100%;        
+        grid-template-columns: repeat(3, 1fr);
+        @include phone {
+            grid-template-columns: 1fr;
+        }         
+    }
+    #face {
+        text-align: right;
+        @include phone {
+            padding: 0 10%;
+        }
+        iframe {
+            height: 400px;
+            width: 100%;
+        }
+    }
+    #form {
+        padding: 0 20px; 
+        height: 400px;  
+        @include phone {
+            margin-bottom: 30px;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        @include phone-landscape {
+            height: 200px;
+        }     
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: rgba(0,0,255,0.1);
+            border: 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+            height: 250px;
+            background: rgba(0,0,255,0.1);
+            border: 0;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            background: rgba(0,0,255,0.1);
+            border: 0;
+            padding: 10px;
+        }
+        
+    }
+    #addr {
+        text-align: center;
+        @include phone {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            margin-bottom: 30px;
+        }
+        p {
+            text-align: center;
+            font-family: $smallHeader;
+            color: rgba(0,0,0,0.7);
+            font-size: 18px;
+            font-style: italic;
+        }        
+    }
+    #map-video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        @include phone {
+            grid-template-columns: 1fr;
+            padding: 0 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
